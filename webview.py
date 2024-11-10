@@ -12,6 +12,7 @@ relevent_experience = st.selectbox("relevent_experience",pd.unique(df['relevent_
 enrolled_university = st.selectbox("enrolled_university",pd.unique(df['enrolled_university']))
 education_level = st.selectbox("education_level",pd.unique(df['education_level']))
 major_discipline = st.selectbox("major_discipline",pd.unique(df['major_discipline']))
+experience = st.selectbox("experience",pd.unique(df['experience']))
 company_size = st.selectbox("company_size",pd.unique(df['company_size']))
 company_type = st.selectbox("company_type",pd.unique(df['company_type']))
 last_new_job = st.selectbox("last_new_job",pd.unique(df['last_new_job']))
