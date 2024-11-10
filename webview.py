@@ -36,7 +36,7 @@ inputs = {
 if st.button("Predict"):
     model = jl.load('grid_cv_jobchg_ppln_model.pkl')
 
-    X_input = pd.DataFrame(inputs)
-    # X_input = pd.DataFrame(inputs, index=[0])
+    # X_input = pd.DataFrame(inputs) --> Will through "If using all scalar values, you must pass an index"
+    X_input = pd.DataFrame(inputs, index=[0]) 
     prediction = model.predict(X_input)
     st.write(prediction)
