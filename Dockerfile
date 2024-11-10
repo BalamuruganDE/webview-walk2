@@ -8,5 +8,6 @@ RUN pip install --no-cache-dir -r requirments.txt
 
 EXPOSE 80
 
-ENTRYPOINT ["uvicorn","model_app:app","--host","0.0.0.0","--port","80"]
+# ENTRYPOINT ["uvicorn","model_app:app","--host","0.0.0.0","--port","80"]
 
+ENTRYPOINT ["streamlit","run","webview.py","--server.host","0.0.0.0","--server.port","80"]
